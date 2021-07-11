@@ -94,7 +94,6 @@ def parse(opts):
 def generate_csv(results, opts):
     keys = ['VEN_DEV_SUBSYS', 'VEN', 'VEN_name', 'DEV', 'DEV_name', 'SUBSYS', 'SUBSYS_name']
     
-    
     if results:
         with open(opts.output_file_vdi, mode='w', encoding='utf-8') as fd_output:
             spamwriter = csv.writer(fd_output, delimiter=opts.delimiter, quoting=csv.QUOTE_ALL, lineterminator='\n')
